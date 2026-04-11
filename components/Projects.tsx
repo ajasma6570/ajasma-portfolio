@@ -17,8 +17,7 @@ export default function Projects() {
         "Full-stack CRM system for tractor service management with inventory tracking, customer management, and service scheduling.",
       tech: ["Next.js", "Express.js", "PostgreSQL", "Prisma"],
       category: "featured",
-      live: "#",
-      github: "#",
+      github: "https://github.com/ajasma6570/arunachala-tarctor-crm.git",
     },
     {
       title: "Gym CRM Application",
@@ -26,8 +25,7 @@ export default function Projects() {
         "Comprehensive gym management system with member dashboard, payment tracking, workout planning, and attendance monitoring.",
       tech: ["Next.js", "Serverless APIs", "PostgreSQL", "Tailwind CSS"],
       category: "featured",
-      live: "#",
-      github: "#",
+      github: "https://github.com/ajasma6570/gym_website.git",
     },
     {
       title: "Wedding Bells",
@@ -35,8 +33,7 @@ export default function Projects() {
         "MERN stack event management platform with role-based access control, vendor booking, and payment integration.",
       tech: ["MongoDB", "Express", "React", "Node.js", "RBAC"],
       category: "featured",
-      live: "#",
-      github: "#",
+      github: "https://github.com/ajasma6570/weddingBells-MERN.git",
     },
     {
       title: "TenMillions E-commerce",
@@ -44,8 +41,8 @@ export default function Projects() {
         "Full-featured e-commerce platform with product catalog, shopping cart, Razorpay payment gateway, and order management.",
       tech: ["Node.js", "Express", "MongoDB", "EJS", "Razorpay"],
       category: "featured",
-      live: "#",
-      github: "#",
+      live: "https://tenmillions-fashion-store.onrender.com/",
+      github: "https://github.com/ajasma6570/Ten_Millions_Fashion_Store.git",
     },
     {
       title: "Heavenstone",
@@ -53,8 +50,7 @@ export default function Projects() {
         "Corporate website with integrated chatbot for customer engagement and automated query handling.",
       tech: ["Next.js", "TypeScript", "Chatbot Integration"],
       category: "web",
-      live: "#",
-      github: "#",
+      live: "https://www.heavenstone.in/",
     },
     {
       title: "Al Eliza Interiors",
@@ -62,8 +58,7 @@ export default function Projects() {
         "Modern interior design portfolio website showcasing projects with image galleries and contact forms.",
       tech: ["Next.js", "Tailwind CSS", "Framer Motion"],
       category: "web",
-      live: "#",
-      github: "#",
+      live: "https://alelizainteriors.com/",
     },
     {
       title: "IP Technics",
@@ -71,8 +66,7 @@ export default function Projects() {
         "Technology company website with dynamic blog, Google Reviews integration, and service showcase.",
       tech: ["Next.js", "TypeScript", "Google APIs"],
       category: "web",
-      live: "#",
-      github: "#",
+      live: "https://iptechnics.com/",
     },
     {
       title: "Difuse",
@@ -89,8 +83,7 @@ export default function Projects() {
         "Creative storytelling platform with modern UI/UX and content management capabilities.",
       tech: ["Next.js", "React", "Tailwind CSS"],
       category: "web",
-      live: "#",
-      github: "#",
+      live: "https://prismofstories.com/",
     },
     {
       title: "Perfetto Events",
@@ -98,8 +91,7 @@ export default function Projects() {
         "Event management company website with service listings, portfolio, and booking inquiries.",
       tech: ["Next.js", "Tailwind CSS", "Framer Motion"],
       category: "web",
-      live: "#",
-      github: "#",
+      live: "https://perfetto-events.vercel.app/",
     },
     {
       title: "OLX Clone",
@@ -107,8 +99,7 @@ export default function Projects() {
         "Classified ads marketplace clone with product listings, user authentication, and search functionality.",
       tech: ["React", "Node.js", "MongoDB"],
       category: "mini",
-      live: "#",
-      github: "#",
+      github: "https://github.com/ajasma6570/OLX_React.git",
     },
     {
       title: "Netflix Clone",
@@ -116,8 +107,8 @@ export default function Projects() {
         "Video streaming platform UI clone with movie browsing, categories, and responsive design.",
       tech: ["React", "CSS3", "REST APIs"],
       category: "mini",
-      live: "#",
-      github: "#",
+      live: "https://ajasma6570.github.io/NetflixClone_React/",
+      github: "https://github.com/ajasma6570/NetflixClone_React.git",
     },
     {
       title: "Family Travel Marker",
@@ -125,8 +116,8 @@ export default function Projects() {
         "Interactive map application for tracking family travel destinations and memories.",
       tech: ["React", "PostgreSQL", "Maps API"],
       category: "mini",
-      live: "#",
-      github: "#",
+      github:
+        "https://github.com/ajasma6570/Family_Travel_Marker-PostgreSQL.git",
     },
     {
       title: "Calculator App",
@@ -134,8 +125,7 @@ export default function Projects() {
         "Modern calculator application with standard and scientific operations.",
       tech: ["React", "CSS3"],
       category: "mini",
-      live: "#",
-      github: "#",
+      github: "https://github.com/ajasma6570/Calculator_using_React.git",
     },
   ];
 
@@ -244,22 +234,27 @@ export default function Projects() {
                   </div>
 
                   <div className="flex gap-4 pt-4 border-t border-white/5">
-                    <MotionLink
-                      href={project.live}
-                      whileHover={{ x: 2 }}
-                      className="flex items-center gap-2 text-sm text-gray-400 hover:text-foreground transition-colors"
-                    >
-                      <span className="icon-[tabler--external-link-filled] w-4 h-4 "></span>
-                      Live
-                    </MotionLink>
-                    <MotionLink
-                      href={project.github}
-                      whileHover={{ x: 2 }}
-                      className="flex items-center gap-2 text-sm text-gray-400 hover:text-foreground transition-colors"
-                    >
-                      <span className="icon-[mingcute--github-line] w-4 h-4 "></span>
-                      Code
-                    </MotionLink>
+                    {project.live && (
+                      <MotionLink
+                        href={project.live}
+                        whileHover={{ x: 2 }}
+                        className="flex items-center gap-2 text-sm text-gray-400 hover:text-foreground transition-colors"
+                      >
+                        <span className="icon-[tabler--external-link-filled] w-4 h-4 "></span>
+                        Live
+                      </MotionLink>
+                    )}
+
+                    {project.github && (
+                      <MotionLink
+                        href={project.github}
+                        whileHover={{ x: 2 }}
+                        className="flex items-center gap-2 text-sm text-gray-400 hover:text-foreground transition-colors"
+                      >
+                        <span className="icon-[mingcute--github-line] w-4 h-4 "></span>
+                        Code
+                      </MotionLink>
+                    )}
                   </div>
                 </div>
               </div>
