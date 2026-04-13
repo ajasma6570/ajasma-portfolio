@@ -54,7 +54,7 @@ export default function Contact() {
             </MotionLink>
 
             <MotionLink
-              href="www.linkedin.com/in/ajasma"
+              href="https://www.linkedin.com/in/ajasma/"
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{ scale: 1.02 }}
@@ -84,14 +84,14 @@ export default function Contact() {
             className="inline-flex items-center gap-8 p-6 rounded-2xl bg-white/[0.02] border border-white/10"
           >
             <div className="text-left">
-              <div className="text-sm text-gray-500 mb-1">Email</div>
+              <div className="text-sm text-muted-foreground mb-1">Email</div>
               <Link href="mailto:ajasma.dev@gmail.com">
                 ajasma.dev@gmail.com
               </Link>
             </div>
             <div className="h-12 w-px bg-white/10" />
             <div className="text-left">
-              <div className="text-sm text-gray-500 mb-1">Location</div>
+              <div className="text-sm text-muted-foreground mb-1">Location</div>
               <div className="text-foreground">Kochi, Kerala</div>
             </div>
           </motion.div>

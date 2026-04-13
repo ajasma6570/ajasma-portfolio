@@ -92,7 +92,7 @@ export default function Hero({
               <span className="block bg-gradient-to-r from-blue-400 via-purple-400 to-blue-400 bg-clip-text text-transparent animate-gradient">
                 Full Stack Developer
               </span>
-              <span className="block text-gray-400 mt-2">
+              <span className="block text-muted-foreground mt-2">
                 Building scalable, high-performance web applications
               </span>
             </div>
@@ -153,22 +153,26 @@ export default function Hero({
               className="p-2 text-muted-foreground hover:text-foreground transition-colors hover:bg-white/5 rounded-lg"
             >
               <span className="icon-[mingcute--github-line] w-5 h-5 "></span>
+              <span className="sr-only">Github</span>
             </MotionLink>
             <MotionLink
-              href="www.linkedin.com/in/ajasma"
+              href="https://www.linkedin.com/in/ajasma/"
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{ scale: 1.1, y: -2 }}
               className="p-2 text-muted-foreground hover:text-foreground transition-colors hover:bg-white/5 rounded-lg"
             >
               <span className="icon-[basil--linkedin-outline] w-5 h-5 "></span>
+              <span className="sr-only">linkedin</span>
             </MotionLink>
             <MotionLink
-              href="mailto:ajas@example.com"
+              href="mailto:ajasma.dev@gmail.com"
+              target="_blank"
               whileHover={{ scale: 1.1, y: -2 }}
               className="p-2 text-muted-foreground hover:text-foreground transition-colors hover:bg-white/5 rounded-lg"
             >
               <span className="icon-[material-symbols--mail-outline] w-5 h-5 "></span>
+              <span className="sr-only">mail</span>
             </MotionLink>
           </motion.div>
         </motion.div>

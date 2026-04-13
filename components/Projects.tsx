@@ -227,7 +227,7 @@ export default function Projects() {
                       </span>
                     ))}
                     {project.tech.length > 4 && (
-                      <span className="px-2.5 py-1 text-xs text-gray-500">
+                      <span className="px-2.5 py-1 text-xs text-muted-foreground">
                         +{project.tech.length - 4}
                       </span>
                     )}
@@ -237,11 +237,13 @@ export default function Projects() {
                     {project.live && (
                       <MotionLink
                         href={project.live}
+                        target="_blank"
                         whileHover={{ x: 2 }}
                         className="flex items-center gap-2 text-sm text-gray-400 hover:text-foreground transition-colors"
                       >
                         <span className="icon-[tabler--external-link-filled] w-4 h-4 "></span>
                         Live
+                        <span className="sr-only"> {project.title}</span>
                       </MotionLink>
                     )}
 
@@ -249,10 +251,12 @@ export default function Projects() {
                       <MotionLink
                         href={project.github}
                         whileHover={{ x: 2 }}
+                        target="_blank"
                         className="flex items-center gap-2 text-sm text-gray-400 hover:text-foreground transition-colors"
                       >
                         <span className="icon-[mingcute--github-line] w-4 h-4 "></span>
                         Code
+                        <span className="sr-only"> {project.title}</span>
                       </MotionLink>
                     )}
                   </div>

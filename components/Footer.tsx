@@ -26,15 +26,17 @@ export default function Footer() {
               className="p-3 text-gray-400 hover:text-foreground transition-colors hover:bg-white/5 rounded-lg"
             >
               <span className="icon-[mingcute--github-line] w-5 h-5 "></span>
+              <span className="sr-only">Github</span>
             </MotionLink>
             <MotionLink
-              href="www.linkedin.com/in/ajasma"
+              href="https://www.linkedin.com/in/ajasma/"
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{ scale: 1.1, y: -2 }}
               className="p-3 text-gray-400 hover:text-foreground transition-colors hover:bg-white/5 rounded-lg"
             >
               <span className="icon-[basil--linkedin-outline] w-5 h-5 "></span>
+              <span className="sr-only">linkedin</span>
             </MotionLink>
             <MotionLink
               href="mailto:ajasma.dev@gmail.com"
@@ -42,10 +44,14 @@ export default function Footer() {
               className="p-3 text-gray-400 hover:text-foreground transition-colors hover:bg-white/5 rounded-lg"
             >
               <span className="icon-[material-symbols--mail-outline] w-5 h-5 "></span>
+              <span className="sr-only">mail</span>
             </MotionLink>
           </div>
 
-          <div className="text-sm text-gray-500">© 2026 Ajas M A.</div>
+          <div className="text-sm text-muted-foreground">
+            {" "}
+            © {new Date().getFullYear()} Ajas M A.
+          </div>
         </div>
       </div>
     </footer>
