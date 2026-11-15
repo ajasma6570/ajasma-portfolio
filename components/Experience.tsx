@@ -4,9 +4,16 @@ import { createFadeInUp } from "@/lib/animations";
 export default function Experience() {
   const experience = [
     {
+      company: "Difinity Digital (HLB Hamt Infotech), Kochi",
+      role: "Frontend Developer",
+      period: "August 2026 – Present",
+      description:
+        "Contributing to the development of Praszo, an enterprise SaaS product using React.js, TypeScript, and Material UI. Developing reusable UI components, implementing server-side data fetching, filtering, sorting, and pagination with TanStack Query and MUI DataGrid. Managing application state using Zustand, integrating RESTful APIs with a .NET backend, and developing organization management, user management, and subscription workflows. Implementing authentication, protected routes, role-based access control, and end-to-end testing using Playwright.",
+    },
+    {
       company: "Iridia Solutions",
       role: "Full Stack Developer",
-      period: "May 2024 – Present",
+      period: "May 2024 – July 2026",
       description:
         "Building scalable web applications with Next.js and modern tech stack. Leading frontend architecture, implementing SEO best practices, and optimizing application performance.",
     },

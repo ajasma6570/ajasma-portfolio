@@ -16,11 +16,14 @@ export default function Skills() {
         "JavaScript (ES6+)",
         "HTML5",
         "CSS3",
+        "Sass",
         "Tailwind CSS",
         "Bootstrap",
         "Shadcn UI",
         "Material UI",
         "Framer Motion",
+        "jQuery",
+        "Context API",
         "GSAP",
         "Axios",
       ],
@@ -96,7 +99,7 @@ export default function Skills() {
       title: "Familiar With",
       icon: Code2,
       color: "pink",
-      items: ["Astro", "Redis", "React Native"],
+      items: ["Angular", "Astro", "Redis", "React Native"],
     },
   };
 
